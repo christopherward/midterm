@@ -2,6 +2,7 @@
 #Christopher Ward
 #MPCS 50101 Midterm
 
+#import csv and json modules to read data properly
 import csv
 import json
 from urllib.request import urlopen
@@ -32,7 +33,7 @@ class Movie:
         #return movie characteristics as object
         return Movie(highest_rating, title, director)
 
-        #close CSV file
+        #close CSV file when search is complete
         file.close()
 
     def plot(self):
